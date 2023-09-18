@@ -4,6 +4,7 @@ dotenv.config();
 import { notFound, errorHandler } from './middleware/errorMiddleware.js';
 import connectDB from './config/db.js';
 const port = process.env.PORT || 5000;
+
 import userRoutes from './routes/userRoutes.js';
 
 connectDB();
@@ -17,9 +18,3 @@ app.use(notFound);
 app.use(errorHandler);
 
 app.listen(port, () => console.log(`Server started on port ${port}`));
-
-// Register a user                   | POST /api/users
-// Authenticate a user and get token | POST /api/users/auth
-// Logout user and clear cookie      | POST /api/users/logout
-// Get user profile                  | GET  /api/users/profile
-// Update profile                    | PUT  /api/users/profile
