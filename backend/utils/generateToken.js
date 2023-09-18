@@ -9,7 +9,7 @@ const generateToken = (res, userId) => {
     httpOnly: true,
     secure: process.env.NODE_ENV !== 'development', // only require HTTPS in production
     sameSite: 'strict', // prevent CSRF attacks
-    maxAge: 30 * 24 * 60 * 60 * 1000 // 30 days in ms
+    maxAge: 30 * 24 * 60 * 60 * 1000, // 30 days in ms
   });
 };
 
