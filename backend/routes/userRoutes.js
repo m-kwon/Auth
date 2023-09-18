@@ -13,7 +13,7 @@ router.post('/', registerUser);
 router.post('/auth', authUser);
 router.post('/logout', logoutUser);
 router
-  .route('profile')
+  .route('/profile')
   .get(getUserProfile)
   .put(updateUserProfile);
 
