@@ -15,3 +15,4 @@ A full stack MERN authentication app using JWT and HttpOnly cookies
 - Redux
 - Redux-toolkit
 - React Bootstrap
+- React Router
