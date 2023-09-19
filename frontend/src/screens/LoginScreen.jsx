@@ -20,7 +20,7 @@ const LoginScreen = () => {
           <Form.Label>E-mail Address</Form.Label>
           <Form.Control
             type='email'
-            placeholder='Enter E-mail'
+            placeholder='Enter e-mail'
             value={email}
             onChange={ (e) => setEmail(e.target.value) }
           ></Form.Control>
@@ -30,7 +30,7 @@ const LoginScreen = () => {
           <Form.Label>Password</Form.Label>
           <Form.Control
             type='password'
-            placeholder='Enter Password'
+            placeholder='Enter password'
             value={password}
             onChange={ (e) => setPassword(e.target.value) }
           ></Form.Control>
