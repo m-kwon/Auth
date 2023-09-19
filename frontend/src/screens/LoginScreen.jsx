@@ -49,3 +49,5 @@ const LoginScreen = () => {
     </FormContainer>
   )
 }
+
+export default LoginScreen;
